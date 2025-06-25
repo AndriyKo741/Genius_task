@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+        /*Буде фіксована висона і ширина, елементи такі як падінг і бордер 
+            не будуть змінювати ці значення  */
+}
+.item{
+    /* display: block;
+    display: inline;
+    display: inline-block; відображення на сторінці, або рядком або блоком типу одне під одним 
+    (інлайн не використовує лирину і висону а вираховує все авто і не використовує вертикальні відсупи (марджен))*/
+
+    
+    /* width: 100px; */
+    flex-basis: 100px;
+    height: 100px;
+    background-color: blue;
+    padding: 10px;
+    border: 5px,solid,red;
+    border-radius: 5px;
+    border: 6px solid darkcyan;
+    margin: 10px;
+    /* padding: 16,42,16,42; */
+    /* або */
+    /* padding: 16,42; якщо відрізняються тільки дві сторони */
+    /* margin: 0,auto; 
+     або 
+    margin-left: auto;
+    margin-right: auto; */
+    
+}
+.item:nth-child(2n+4){
+    background-color: gold;
+}
+.flex-container {
+display: flex;
+justify-content: center;
+}
