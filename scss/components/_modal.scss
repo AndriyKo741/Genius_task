@@ -1,0 +1,115 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+    padding: 128px;
+    overflow-y: auto;
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-button-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+/* contaxt-form */
+.form-label {
+    display: block;
+}
+
+.form-input {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border: 1px solid var(--color-secondary-dack);
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.form-field {
+    margin-bottom: 32px;
+}
+
+.form-input:focus {
+    border-color: var(--color-brand-normal);
+    outline: none;
+}
+
+.form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--color-secondary-dack);
+}
+
+.form-input:focus::placeholder {
+    color: var(--color-primary-dark);
+}
+
+.form-button {
+    margin: 0 auto 24px;
+    display: block;
+}
+
+.form-terms {
+    margin: 0 auto;
+    max-width: 220px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-terms-link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+}
+
+/* .checkbox-input{
+    appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before{
+    background-color: #465929;
+}
+.checkbox-label::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 2px;
+    content: '';
+}
+.checkbox-label{
+    padding-left: 24px;
+}
+.check-box{
+    position: relative;
+} */

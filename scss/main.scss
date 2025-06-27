@@ -1,0 +1,54 @@
+// fonts
+@import './utils/fonts.scss';
+//  variabless
+@import './utils/variables';
+// base
+@import './base';
+
+// hidden
+@import './utils/utils';
+@import './utils/mixins';
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.section {
+    padding: 48px 0;
+}
+
+.section-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+.section-title.centered {
+    text-align: center;
+}
+
+.section-title .accent {
+    color: var(--color-brand-dark)
+}
+// button
+@import './components/buttons';
+// link
+@import './components/links';
+/* Header-section */
+@import './components/header';
+/* hero-section */
+@import './components/hero';
+/* advantages-section */
+@import './components/advantages';
+/* Tradition section */
+@import './components/traditions';
+/* chef section */
+@import './components/chefs';
+/* Formats-section *//* carousel-button */
+@import './components/formats';
+/* contact section */
+@import './components/contacts';
+/* Footer */
+@import './components/footer';
+/* modal */
+@import './components/modal';
